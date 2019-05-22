@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CalculatorLab</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+    <form name="myForm" onsubmit="event.preventDefault(); MainCalc();">
+
+            <div id="user" class="userInput">
+                    <input id="user1" type="number"  step="1" />
+                    <input id="user2" type="number"  step="1" />
+            </div>
+                
+            
+            
+            
+                <div><br>
+                        <input type="radio" name="Equation" value="Add"/>Add<br>
+                        <input type="radio" name="Equation" value="Subtract"/>Subtract<br>
+                        <input type="radio" name="Equation" value="Multiply"/>Multiply<br>
+                        <input type="radio" name="Equation" value="Divide"/>Divide<br>
+                        
+                </div>
+                <div class="button1">
+                                <button >Submit</button>  
+                </div>
+                
+    </form>
+
+    <div id="calcAnswer" class="calc">
+            0
+    </div>
+            
+      
+
+    <script src="calcScript.js"></script>
+</body>
+</html>
